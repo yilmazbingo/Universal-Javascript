@@ -37,6 +37,7 @@
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
+    "regenerator-runtime": "^0.13.3",
     "serialize-javascript": "^2.1.2",
     "webpack": "^4.41.5",
     "webpack-dev-server": "^3.10.1",
