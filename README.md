@@ -10,7 +10,7 @@
 - Express is not going to enforce any routing rules on any incoming requests. Instead it will delegate all routing inside of our application to the react-router. For anything that is meant to show HTML we are always going to make sure that react-router is in charge of that request.
 - StaticRouter is specifically made for use on the server-side-rendering. When we do the initial render of app, we use StaticRouter. After our application is shipped down to the browser and it gets hydrated, we will swap out to be using BrowserRouter.
 - BrowserRouter does not work on the server because there is no address bar on the server. BrowserRouter is hardcoded to expect an address. It is designed to look at the URL in the browser's address bar.
-- We have to tell StaticRouter which component should be rendered upon the request. It has location prop and we pass the `req.path`.
+- We have to tell StaticRouter which component should be rendered upon the request. It has location prop and we pass the `req.path`. it also has `context` prop which is an object, we will be using for the rendering pageNotFound pages.
 ### Redux
 - We need to create two separate stores, for client and server.
 - After we create our store on the server, we have to send it to the browser for the initial kickstart.
